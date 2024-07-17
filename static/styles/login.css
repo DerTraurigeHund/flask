@@ -1,0 +1,121 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.login {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.register {
+    display: none;
+}
+
+.register_step2 {
+    display: none;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container_header {
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    padding-bottom: 0px;
+    margin-top: -20px;
+    width: calc(100% + 40px);
+}
+
+.container_header .button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.container_header .button button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.container_header .button button:hover {
+    background-color: var(--primary-color);
+}
+
+.active {
+    background-color: var(--primary-color) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.submit {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+
+}
+
+.submit button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--extra-color);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-top: 20px;
+}
+
+.submit button:hover {
+    background-color: var(--extra-color-hover);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error p {
+    margin: 0;
+}
